@@ -43,7 +43,7 @@ This application is designed to be installed and run within an Anaconda environm
 5.  **Clone Faster Whisper Repository:** Clone the Faster Whisper repository into the `C:\temp` directory.
 
     ```bash
-    git clone [https://github.com/SYSTRAN/faster-whisper.git](https://github.com/SYSTRAN/faster-whisper.git)
+    git clone https://github.com/SYSTRAN/faster-whisper.git
     ```
 
 6.  **Install Dependencies:** Navigate to the cloned repository and install the required packages:
