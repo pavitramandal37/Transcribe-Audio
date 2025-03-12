@@ -102,12 +102,13 @@ The application supports a wide range of languages, including but not limited to
 
 ## Further Information
 
-For a visual demonstration and further insights, please refer to the following resource:
+If you face any trouble to install faster-wispher you can refer to the following resource:
 
 * [YouTube Video](https://youtu.be/Kyc0AgMIBSU?si=5Di7bfHi_lHePeLy)
 
 ## Screenshots
 
-[Insert Screenshots of the Application with Sample Output Here]
+![image](https://github.com/user-attachments/assets/cb123d43-cc20-4914-8605-38795ae65f37)
+
 
 **Disclaimer:** This application is tailored to the developer's system specifications. Performance may vary on different hardware configurations.
