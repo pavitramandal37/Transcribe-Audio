@@ -1,70 +1,113 @@
-# Audio Transcription App
+# Audio Transcription Application - Powered by Faster Whisper
 
-A PyQt5-based GUI application for transcribing audio files using the Faster Whisper model.
+This application provides a user-friendly, PyQt5-based Graphical User Interface (GUI) for transcribing audio files with high accuracy and efficiency, leveraging the Faster Whisper model.
 
-## Features
+## Overview
 
-- Transcribe audio files in multiple languages
-- Support for various model sizes (tiny, base, small, medium, large-v2, large-v3)
-- Option to use CPU or GPU (CUDA) for processing
-- Save transcription results to text files
-- Real-time progress updates
+The Audio Transcription Application simplifies the process of converting speech to text, offering robust features and flexible configuration options suitable for a wide range of audio transcription needs.
 
-## Requirements
+## Key Features
 
-This application requires the following Python packages:
-- PyQt5
-- faster-whisper
+* **Multi-Language Transcription:** Transcribe audio in numerous languages, with automatic language detection available.
+* **Flexible Model Selection:** Choose from various Faster Whisper model sizes (tiny, base, small, medium, large-v2, large-v3) to balance accuracy and processing speed.
+* **Hardware Acceleration:** Utilize CPU or GPU (CUDA) for accelerated transcription, significantly reducing processing time.
+* **Result Persistence:** Save transcription results to easily accessible text files.
+* **Real-time Progress Monitoring:** Track the transcription progress with live updates within the GUI.
+* **User-Friendly Interface:** Intuitive design for seamless navigation and operation.
 
-## Installation
+## System Requirements
 
-This application is designed to run in an Anaconda environment with the required packages installed.
+To ensure optimal performance, the following system requirements must be met:
 
-1. Make sure you have Anaconda installed
-2. Open Anaconda Prompt
-3. Create a new environment (optional):
-   ```
-   conda create -n fasterWhisper python=3.9
-   conda activate fasterWhisper
-   ```
-4. Install the required packages:
-   ```
-   pip install PyQt5
-   pip install faster-whisper
-   ```
+* **Operating System:** Windows, macOS, or Linux (tested primarily on Windows).
+* **Python:** Python 3.10 is required within your virtual environment.
+* **CUDA (for GPU Acceleration):** CUDA version 9.0 is required for GPU acceleration.
+* **cuDNN (for GPU Acceleration):** cuDNN version 11.8 is required for GPU acceleration.
+* **Anaconda:** Recommended for environment management.
+* **Temporary Directory:** A temporary directory such as "C:\temp" is required for the installation process.
 
-## Usage
+## Installation Guide
 
-1. Run the application:
-   ```
-   python audio_transcription_app.py
-   ```
+This application is designed to be installed and run within an Anaconda environment. Follow these steps for a successful setup:
 
-2. Click the "Browse" button to select an audio file (supported formats: mp3, wav, m4a, flac)
+1.  **Install Anaconda:** Ensure Anaconda is installed on your system.
+2.  **Open Anaconda Prompt:** Launch the Anaconda Prompt.
+3.  **Create a Virtual Environment:** (Recommended) Create a dedicated virtual environment to avoid dependency conflicts:
 
-3. Configure the transcription settings:
-   - Model Size: Select the model size based on your needs (larger models are more accurate but slower)
-   - Language: Choose the language of the audio or select "auto" for automatic detection
-   - Device: Select CPU or GPU (CUDA) for processing
+    ```bash
+    conda create -n fasterWhisper python=3.10 -y
+    conda activate fasterWhisper
+    ```
 
-4. Click the "Transcribe Audio" button to start the transcription process
+4.  **Create Temporary Directory:** Create a temporary directory at `C:\temp`
+5.  **Clone Faster Whisper Repository:** Clone the Faster Whisper repository into the `C:\temp` directory.
 
-5. Once the transcription is complete, you can save the results by clicking the "Save Transcription" button
+    ```bash
+    git clone [https://github.com/SYSTRAN/faster-whisper.git](https://github.com/SYSTRAN/faster-whisper.git)
+    ```
+
+6.  **Install Dependencies:** Navigate to the cloned repository and install the required packages:
+
+    ```bash
+    cd C:\temp\faster-whisper
+    conda install --file requirements.txt
+    ```
+
+7.  **Install Faster Whisper:** Install the Faster Whisper package.
+
+    ```bash
+    conda install faster-whisper
+    ```
+8.  **Install PyQt5:** Install the PyQt5 library for the GUI.
+
+    ```bash
+    pip install PyQt5
+    ```
+
+## Usage Instructions
+
+1.  **Run the Application:** Execute the application script:
+
+    ```bash
+    python audio_transcription_app.py
+    ```
+
+2.  **Select Audio File:** Click the "Browse" button to choose an audio file (supported formats: mp3, wav, m4a, flac).
+3.  **Configure Transcription Settings:**
+    * **Model Size:** Select the desired Faster Whisper model size.
+    * **Language:** Choose the audio language or "auto" for automatic detection.
+    * **Device:** Select "CPU" or "GPU (CUDA)" for processing.
+4.  **Start Transcription:** Click "Transcribe Audio" to initiate the transcription process.
+5.  **Save Results:** Once completed, click "Save Transcription" to save the results to a text file.
 
 ## Model Size Recommendations
 
-- **tiny**: Fastest, lowest accuracy, minimal resource usage
-- **base**: Fast with reasonable accuracy for simple audio
-- **small**: Good balance between speed and accuracy for general use
-- **medium**: Higher accuracy, moderate resource usage
-- **large-v2/v3**: Highest accuracy, significant resource usage, recommended for complex audio or challenging accents
+* **tiny:** Fastest, minimal resource usage, lowest accuracy.
+* **base:** Fast, reasonable accuracy for simpler audio.
+* **small:** Good balance of speed and accuracy for general use.
+* **medium:** Higher accuracy, moderate resource usage.
+* **large-v2/v3:** Highest accuracy, significant resource usage, recommended for complex audio.
 
 ## Language Support
 
-The application supports multiple languages including English, Japanese, Chinese, German, Spanish, Russian, Korean, French, Italian, Portuguese, Turkish, Polish, Catalan, Dutch, Arabic, Swedish, Czech, Finnish, and Ukrainian.
+The application supports a wide range of languages, including but not limited to: English, Japanese, Chinese, German, Spanish, Russian, Korean, French, Italian, Portuguese, Turkish, Polish, Catalan, Dutch, Arabic, Swedish, Czech, Finnish, and Ukrainian.
 
-## Notes
+## Important Notes
 
-- GPU acceleration requires CUDA to be properly installed on your system
-- For large audio files, using a larger model size may require significant processing time and memory
-- The application will display the detected language and confidence level during transcription 
+* GPU acceleration requires a properly configured CUDA and cuDNN environment.
+* Large audio files and larger model sizes will require more processing time and memory.
+* The application displays the detected language and confidence level during transcription.
+* This application's performance is optimized for specific system specifications. Performance may vary on different systems.
+* With a compatible GPU, the application can provide rapid transcription, potentially processing a 5-minute audio file within seconds.
+
+## Further Information
+
+For a visual demonstration and further insights, please refer to the following resource:
+
+* [YouTube Video](https://youtu.be/Kyc0AgMIBSU?si=5Di7bfHi_lHePeLy)
+
+## Screenshots
+
+[Insert Screenshots of the Application with Sample Output Here]
+
+**Disclaimer:** This application is tailored to the developer's system specifications. Performance may vary on different hardware configurations.
