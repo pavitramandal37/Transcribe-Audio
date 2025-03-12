@@ -29,7 +29,7 @@ To ensure optimal performance, the following system requirements must be met:
 ## Installation Guide
 
 This application is designed to be installed and run within an Anaconda environment. Follow these steps for a successful setup:
-
+You can directly run the ```Transcribe MyApp.bat``` file or go with the manual step:
 1.  **Install Anaconda:** Ensure Anaconda is installed on your system.
 2.  **Open Anaconda Prompt:** Launch the Anaconda Prompt.
 3.  **Create a Virtual Environment:** (Recommended) Create a dedicated virtual environment to avoid dependency conflicts:
@@ -105,6 +105,8 @@ The application supports a wide range of languages, including but not limited to
 If you face any trouble to install faster-wispher you can refer to the following resource:
 
 * [YouTube Video](https://youtu.be/Kyc0AgMIBSU?si=5Di7bfHi_lHePeLy)
+* ![image](https://github.com/user-attachments/assets/cb9a4192-0201-48ae-b0de-e1701efd9fc2)
+
 
 ## Screenshots
 
